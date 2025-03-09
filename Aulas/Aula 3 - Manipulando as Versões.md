@@ -6,6 +6,7 @@
 * Estado inválido: código em implementação pode não estar pronto para commit.
 * `git stash`: Guarda alterações temporariamente.
 * `git stash pop`: Aplica alterações armazenadas e remove da pilha.
+* `git stash drop`: Remove alterações da pilha.
 * `git stash apply`: Aplica alterações armazenadas, mantendo na pilha.
 * `git stash list`: Visualiza alterações guardadas.
 * `git stash clear`: Remove todas as stashes.
