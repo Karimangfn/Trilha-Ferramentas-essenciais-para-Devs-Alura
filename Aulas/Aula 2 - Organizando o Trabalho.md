@@ -11,12 +11,14 @@
 ## Organização com Branches
 
 * Importância de não realizar commits diretamente na branch principal (`main`).
-* Apresentação do site Visualizing Git para entender o funcionamento do Git.
+* Apresentação do site Visualizing Git para entender o funcionamento do Git (https://git-school.github.io/visualizing-git/).
 * Comandos para gerenciamento de branches:
-    * `git branch`: Cria, lista, renomeia e remove branches.
-    * `git checkout` ou `git switch`: Alterna entre branches.
-* Criação de branches para funcionalidades específicas.
-* Preparação para a união de branches.
+    * `git branch`: Lista branches existentes. Também pode ser usado para criar (`git branch nome-da-branch`), renomear (`git branch -m nome-antigo nome-novo`) e excluir branches (`git branch -d nome-da-branch` para excluir localmente e `git branch -D` para forçar a exclusão).
+    * `git checkout -b nome-da-branch`: Cria uma nova branch e já muda para ela.
+    * `git checkout` ou `git switch`: Alterna entre branches existentes.
+* Criação de branches para funcionalidades específicas, evitando alterações diretas na branch principal.
+* Preparação para a união de branches, utilizando `git merge` ou `git rebase`, conforme necessário.
+
 
 ## União de Branches com `git merge`
 

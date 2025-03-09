@@ -25,5 +25,5 @@
     * Permitem verificar o estado atual do repositório e as diferenças entre as versões dos arquivos.
     * `git status`: Verifica a ramificação e alterações não commitadas (mostra mudanças não staged).
     * `git diff`: Visualiza diferenças entre o estado atual e o último commit.
-    * `git diff <commit1>..<commit2>`: Compara diferenças entre dois commits.
+    * `git diff <commit1>..<commit2>`: Compara diferenças entre dois commits (se eu colocar apenas 1 commit, ele será comparado com o HEAD).
     * `git add`: Adiciona arquivo ao stage.
