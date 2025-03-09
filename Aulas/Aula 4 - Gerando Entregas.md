@@ -4,6 +4,7 @@
 
 * Tags funcionam como checkpoints para marcar estados específicos do código.
 * `git tag nome_da_tag`: Cria uma tag que aponta para o commit atual.
+* `git tag {nome_da_tag} {hash do commit}`: Cria uma tag em um commit especifico.
 * Tags apontam para o mesmo commit, mesmo com novos commits adicionados.
 * Criação de tags para commits específicos usando o hash do commit.
 * `git tag`: Visualiza as tags criadas.
@@ -17,6 +18,7 @@
 * `git tag -d nome_da_tag`: Apaga uma tag existente.
 * `git tag -a nome_da_tag -m "mensagem da tag"`: Cria uma annotated tag.
 * `git push origin nome_da_tag`: Envia a tag para o repositório remoto.
+* `git push origin --tags`: Envia todas as tags para o repositório remoto.
 * GitHub exibe informações de annotated tags (mensagem, autor).
 * Tags com mensagens são automaticamente consideradas annotated tags.
 
