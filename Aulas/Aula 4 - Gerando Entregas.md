@@ -31,3 +31,13 @@
 * Criação de releases: escolha de tag, título, notas de lançamento, arquivos adicionais.
 * Releases documentam e compartilham novas versões no GitHub.
 * Releases podem ser criadas manualmente ou via GitHub Actions.
+
+## Como criar uma release no GitHub
+
+1. No seu repositório do GitHub, clique na aba **"Releases"**.
+2. Clique no botão **"Draft a new release"**.
+3. Escolha uma tag existente ou crie uma nova.
+4. Adicione um título para a release.
+5. Preencha as **notas de lançamento** com as mudanças ou melhorias dessa versão.
+6. Opcionalmente, envie **arquivos adicionais** (como binários ou documentação).
+7. Clique em **"Publish release"** para publicar a release.
