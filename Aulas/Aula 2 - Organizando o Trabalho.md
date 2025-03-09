@@ -32,7 +32,83 @@
 
 ## Atualização de Branches com `git rebase`
 
-* Criação de branch `nova-funcionalidade` a partir de `main`.
-* `git rebase main`: Atualiza a branch `nova-funcionalidade` com os commits mais recentes de `main`.
-* Diferença entre `merge` e `rebase`.
-* Vantagens do rebase: integração de funcionalidades e histórico linear.
+* Criação de branch `nova-funcionalidade` a partir de `main`.  
+* `git rebase main`: Atualiza a branch `nova-funcionalidade` com os commits mais recentes de `main`.  
+* Diferença entre `merge` e `rebase`:  
+  * `merge` cria um commit de junção, preservando o histórico paralelo das branches.  
+  * `rebase` reaplica os commits da branch atual sobre a `main`, resultando em um histórico linear.  
+* Vantagens do rebase:  
+  * Integração de funcionalidades de forma mais limpa.  
+  * Histórico linear facilita a leitura e depuração.  
+  * Evita commits de merge desnecessários.  
+
+## Exemplo de `git rebase`
+
+### 1. Criando a branch
+```bash
+git checkout -b nova-funcionalidade main
+```
+Isso cria e muda para a branch `nova-funcionalidade` baseada na `main`.
+
+### 2. Fazendo commits na branch
+```bash
+echo "Linha 1" >> arquivo.txt
+git add arquivo.txt
+git commit -m "Adiciona linha 1"
+
+echo "Linha 2" >> arquivo.txt
+git add arquivo.txt
+git commit -m "Adiciona linha 2"
+```
+Agora, temos dois commits na branch `nova-funcionalidade`.
+
+### 3. `main` recebeu novos commits
+Enquanto trabalhamos, novos commits foram adicionados à branch `main`:
+
+```
+A---B---C  (main atualizado)
+ \
+  D---E   (nova-funcionalidade)
+```
+
+### 4. Fazendo o rebase
+Para atualizar `nova-funcionalidade` com as mudanças mais recentes da `main`:
+
+```bash
+git checkout nova-funcionalidade
+git rebase main
+```
+
+Isso reaplica os commits `D` e `E` sobre a `main`, resultando no seguinte histórico:
+
+```
+A---B---C---D'---E'  (nova-funcionalidade atualizado)
+```
+
+Agora a branch `nova-funcionalidade` tem um histórico linear sem um commit de merge.
+
+### 5. Resolvendo conflitos (se necessário)
+Se houver conflitos durante o rebase, Git pausa e exibe mensagens. Para resolver:
+
+1. Edite os arquivos conflitantes.
+2. Adicione as mudanças com `git add arquivo.txt`.
+3. Continue o rebase com:
+
+```bash
+git rebase --continue
+```
+
+Se quiser cancelar o rebase:
+
+```bash
+git rebase --abort
+```
+
+### 6. Finalizando e enviando para o repositório remoto
+Após o rebase, precisamos forçar o push porque o histórico foi reescrito:
+
+```bash
+git push origin nova-funcionalidade --force
+```
+
+⚠️ **Cuidado ao usar `--force`, pois isso pode sobrescrever mudanças no remoto.**
