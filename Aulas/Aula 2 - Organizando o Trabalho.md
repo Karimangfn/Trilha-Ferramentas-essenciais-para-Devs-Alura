@@ -88,7 +88,7 @@ A---B---C---D'---E'  (nova-funcionalidade atualizado)
 Agora a branch `nova-funcionalidade` tem um histórico linear sem um commit de merge.
 
 ### 5. Resolvendo conflitos (se necessário)
-Se houver conflitos durante o rebase, Git pausa e exibe mensagens. Para resolver:
+Se houver conflitos durante o rebase. Para resolver:
 
 1. Edite os arquivos conflitantes.
 2. Adicione as mudanças com `git add arquivo.txt`.
