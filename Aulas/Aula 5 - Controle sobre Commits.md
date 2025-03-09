@@ -16,8 +16,6 @@
 
 * `git blame`: Mostra autor, data e hash do commit responsável por cada linha do arquivo.
 * Ajuda a entender o histórico de modificações e consultar desenvolvedores.
-* Uso construtivo: esclarecer dúvidas, não culpar.
-* IDEs (como Visual Studio Code) podem exibir informações de forma amigável.
 
 ## Revisão Geral do Git
 

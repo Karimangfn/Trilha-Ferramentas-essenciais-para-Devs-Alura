@@ -92,8 +92,12 @@
     * Exemplo: `git tag -a v1.0.0 -m "versão inicial"`
 * `git push origin nome_da_tag` – Envia a tag para o repositório remoto.
     * Exemplo: `git push origin v1.0.0`
+* `git push origin --tags`: Envia todas as tags para o repositório remoto.
+    * Exemplo: `git push --tags`
 * `git tag -v nome_da_tag` – Verifica informações de uma annotated tag.
     * Exemplo: `git tag -v v1.0.0`
+* `git tag nome_da_tag hash_do_commit` – Cria uma tag em um commit especifico.
+    * Exemplo: `git tag v1.0.0 rsmsdh232`
 
 ### Comandos Específicos
 
