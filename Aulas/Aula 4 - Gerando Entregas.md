@@ -16,7 +16,7 @@
 * Tags são ponteiros para commits.
 * Annotated tags possuem informações adicionais (mensagens, autor).
 * `git tag -d nome_da_tag`: Apaga uma tag existente.
-* `git tag -a nome_da_tag -m "mensagem da tag"`: Cria uma annotated tag.
+* `git tag -a nome_da_tag -m "mensagem da tag"`: Cria uma annotated tag (O paramêtro -a é opcional).
 * `git push origin nome_da_tag`: Envia a tag para o repositório remoto.
 * `git push origin --tags`: Envia todas as tags para o repositório remoto.
 * GitHub exibe informações de annotated tags (mensagem, autor).
