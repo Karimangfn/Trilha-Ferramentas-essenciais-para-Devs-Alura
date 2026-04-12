@@ -2,7 +2,7 @@
 
 📚 Trilha da plataforma Alura focada em desenvolver habilidades fundamentais para o dia a dia de programação.
 
-* 🔗 Trilha na Alura: *https://www.alura.com.br/formacao-ferramentas-essenciais-devs*
+* 🔗 Trilha na Alura: *https://www.alura.com.br/formacao-ferramentas-para-devs*
 
 ---
 
